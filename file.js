@@ -1,5 +1,15 @@
+function equipe(){
+
+    document.getElementById('equipe').style.display = 'block'
+    document.getElementById('cadastro').style.display = 'none'
+    document.getElementById('editar').style.display = 'none'
+    document.getElementById('deletar').style.display = 'none'
+    document.getElementById('listar').style.display = 'none'
+    }
+
 function MostrarMensagem(){
 
+    document.getElementById('equipe').style.display = 'none'
     document.getElementById('cadastro').style.display = 'block'
     document.getElementById('editar').style.display = 'none'
     document.getElementById('deletar').style.display = 'none'
@@ -13,6 +23,7 @@ function MostrarMensagem(){
 
 function Editar(){
 
+    document.getElementById('equipe').style.display = 'none'
     document.getElementById('cadastro').style.display = 'none'
     document.getElementById('editar').style.display = 'block'
     document.getElementById('deletar').style.display = 'none'
@@ -22,6 +33,7 @@ function Editar(){
 }
 function deletar(){
 
+    document.getElementById('equipe').style.display = 'none'
     document.getElementById('cadastro').style.display = 'none'
     document.getElementById('editar').style.display = 'none'
     document.getElementById('deletar').style.display = 'block'
@@ -29,6 +41,7 @@ function deletar(){
 
 }function listar(){
 
+document.getElementById('equipe').style.display = 'none'
 document.getElementById('cadastro').style.display = 'none'
 document.getElementById('editar').style.display = 'none'
 document.getElementById('deletar').style.display = 'none'
