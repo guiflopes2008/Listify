@@ -32,23 +32,28 @@ justify-content: center;
 
 
    html{
-
+    margin: 0;
     height: 100%;
+    padding: 0;
 
 }
 
 body{
 
     height: 100%;
-    background-color: rgb(100, 100, 100);
+    
     margin: 0;
+    padding: 0;
 
 }
 
 #container{
 
     height: 100%;
-    background-color: blue;
+    background-color: rgb(255, 255, 255) ;
+    
+   
+    
 
 }
 
@@ -62,7 +67,7 @@ body{
 #cadastro
 {
     height: 80%;
-    background-color: rebeccapurple;
+    background-color: rgb(255, 255, 255);
     display: block;
 
 }
@@ -107,5 +112,65 @@ label:hover{
     height: 80%;
     background-color: rgb(0, 252, 67);
     display: block;
+
+}
+
+#listify{
+
+    margin: 15px;
+
+
+}
+
+.foto{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.img-perfil{
+    width: 115px ;
+    border-radius: 70%;
+}
+
+#tt{
+    display: flex;
+justify-content: center;
+
+
+}
+#dd{
+    display: flex;
+    justify-content: center;
+
+} 
+.cad{
+    border-style: #f4f6ff;
+    background-color: rgb(172, 172, 172);
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px ;
+    height: 60%;
+    width: 30%;
+    margin: 60px;
+    
+}
+#username{
+    border-radius: 20px;
+
+}
+#password{
+    border-radius: 20px;
+
+}
+
+#cadastros{
+
+    border-radius: 20px;
+    justify-content: center;
+    background-color: yellow;
 
 }

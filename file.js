@@ -1,5 +1,6 @@
 function equipe(){
 
+
     document.getElementById('equipe').style.display = 'block'
     document.getElementById('cadastro').style.display = 'none'
     document.getElementById('editar').style.display = 'none'
