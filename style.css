@@ -50,7 +50,7 @@ body{
 #container{
 
     height: 100%;
-    background-color: #b8b6b6;
+    background-color: #b8b6b6 ;
     
    
     
@@ -88,7 +88,7 @@ label:hover{
 #editar
 {
     height: 80%;
-    background-color: pink;
+    background-color: #b8b6b6;
     display: block;
 
 }
@@ -160,6 +160,20 @@ justify-content: center;
     margin: 60px;
     
 }
+
+.edit{
+    
+   
+    background-color: rgb(221, 212, 212) ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px ;
+    height: 60%;
+    width: 30%;
+    margin: 60px;
+
+}
+
 #username{
     border-radius: 20px;
     border-color: black;
@@ -173,7 +187,26 @@ justify-content: center;
 #cadastros{
 
     border-radius: 20px;
-    justify-content: center;
+
+    background-color: #f4f07d;
+
+}
+
+#email{
+
+    border-radius: 20px;
+
+}
+
+#emai{
+
+    border-radius: 20px;
+
+}
+
+#Confirmar{
+
+    border-radius: 10px;
     background-color: #f4f07d;
 
 }
