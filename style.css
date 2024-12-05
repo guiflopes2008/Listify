@@ -50,7 +50,7 @@ body{
 #container{
 
     height: 100%;
-    background-color: rgb(255, 255, 255) ;
+    background-color: #b8b6b6;
     
    
     
@@ -60,14 +60,14 @@ body{
 #nav-bar{
 
     height: 20%;
-    background-color: gray;
+    background-color: rgb(41, 40, 40);
 
 }
 
 #cadastro
 {
     height: 80%;
-    background-color: rgb(255, 255, 255);
+    background-color: #b8b6b6;
     display: block;
 
 }
@@ -117,7 +117,8 @@ label:hover{
 
 #listify{
 
-    margin: 15px;
+    margin: 30px;
+    
 
 
 }
@@ -148,8 +149,9 @@ justify-content: center;
 
 } 
 .cad{
-    border-style: #f4f6ff;
-    background-color: rgb(172, 172, 172);
+    
+   
+    background-color: rgb(221, 212, 212) ;
     border-radius: 10px;
     text-align: center;
     padding: 50px ;
@@ -160,17 +162,18 @@ justify-content: center;
 }
 #username{
     border-radius: 20px;
+    border-color: black;
 
 }
 #password{
     border-radius: 20px;
-
+    border-color: black;
 }
 
 #cadastros{
 
     border-radius: 20px;
     justify-content: center;
-    background-color: yellow;
+    background-color: #f4f07d;
 
 }
