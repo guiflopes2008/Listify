@@ -14,57 +14,59 @@
 
     <div id="nav-bar">
              <img id="listify" src="unnamed.png" alt="logo">
-
-            <button onclick="equipe()">equipe</button>
-            <button onclick="MostrarMensagem()">cadastrar</button>
-            <button onclick="Editar()">editar</button>
-            <button onclick="deletar()">deletar</button>
-            <button onclick="listar()">listar</button>
-
+                <div class="buttons">
+            <label onclick="equipe()">equipe</label>
+            <label onclick="MostrarMensagem()">cadastrar</label>
+            <label onclick="editar()">editar</label>
+            <label onclick="deletar()">deletar</label>
+            <label onclick="listar()">listar</label>
+          </div>
         </div>
         
         <div id="equipe">
     
+          
 </div>
 
 
 
   <div id="cadastro">
     <div class="cad">
-
-    <label for="email"> coloque seu email</label>
-    <input  type="email"  id="emai" ><br><br>
-      
-    <label for="username">Nome do Usuário</label>
-   <input type="text"id="username"><br><br>
-
-   <label for="password">Senha de Usuário</label>
-   <input type="password" id="password"><br><br>
-
-   <button id="cadastros" onclick="cadastros()">Cadastrar</button>
+      <form>
    
+    <input  type="email"  id="cadEmail" placeholder="Email"><br><br>
+    <br>
+      
+    <input type="text" id="cadUsername" placeholder="Nome de usuário"><br><br>
+    <br>
+
+      <input type="password" id="cadPassword" placeholder="Senha de Usuário"><br><br><br>
+         <br>
+
+        <button id="cadastros" onclick="cadastros()">Cadastrar</button>
+   </form>
+         
+
   </div>
-  </div>
+</div>
 
     <div id="editar">   
       <div class="edit">
+        <form>
 
-        <label for="email"> email</label>
-        <input  type="email"  id="emai" ><br><br>
+        <input  type="email"  id="editEmail" placeholder="Email" ><br><br>
+
+        <input  type="password"  id="editsenhaAtual" placeholder="Senha atual" ><br><br>
           
-        <label for="username">Senha atual</label>
-       <input type="text"id="username"><br><br>
+
+       <input type="password" id="editSenha" placeholder="Nova senha"><br><br>
     
-       <label for="password">Nova senha</label>
-       <input type="password" id="password"><br><br>
+
+       <input type="password" id="editconfSenha" placeholder="Confirmar nova senha"><br><br><br>
     
-       <button id="Confirmar" onclick="confirmar()">Confirmar</button>
-       
+       <button id="Confirmar" onclick="confirmar()">Editar</button>
+       </form>
       </div>
-
-
-
-
 
 
 
