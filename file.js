@@ -41,6 +41,7 @@ function editar(){
     
     
 }
+
 function confirmar(){
     let editDados = [];
     let editEmail = document.getElementById('editEmail').value;
