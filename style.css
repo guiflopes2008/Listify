@@ -190,14 +190,14 @@ justify-content: center;
 #cadastros{
 
     border-radius: 20px;
-    width: 500px;
+    width: 95%;
     height: 75px;
     background-color: #f4f07d;
     font-size: 30px;
     
 }
 
-#Confirmar{
+/* #Confirmar{
 
     border-radius: 20px;
     width: 500px;
@@ -205,7 +205,7 @@ justify-content: center;
     background-color: #f4f07d;
     font-size: 30px;
 
-}
+} */
 
 #email{
 
@@ -221,13 +221,16 @@ justify-content: center;
 
 #Confirmar{
 
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #f4f07d;
+    width: 95%;
+    height: 75px;
+    font-size: xx-large;
 
 }
 
 input{
-    width: 500px;
+    width: 90%;
     height: 50px;
     border-radius: 15px;
     font-size: x-large;
@@ -254,11 +257,17 @@ input{
 
 #deleta{
 
-    border-radius: 20px;
-    width: 500px;
-    height: 75px;
+    /* border-radius: 20px;
+    width:95% ;
+    height:75%;
     background-color: #f4f07d;
-    font-size: 30px;
+    font-size: 30px; */
+
+    border-radius: 20px;
+    background-color: #f4f07d;
+    width: 95%;
+    height: 75px;
+    font-size: xx-large;
 
 
 }
