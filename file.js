@@ -1,5 +1,6 @@
 let bancodeDados = [];
-
+let nomeEdit, novoNome,novouser,confuser, novaSenha,confSenha, nomeDel
+let posVetor
 function cadastro(){
 
     document.getElementById('cadastro').style.display = 'block'
@@ -32,46 +33,49 @@ return false;
     
 }
 
-function editar(){
+                function editar(){
 
-    document.getElementById('cadastro').style.display = 'none'
-    document.getElementById('editar').style.display = 'block'
-    document.getElementById('deletar').style.display = 'none'
-    document.getElementById('listar').style.display = 'none'
-    
-    
-}
+                    document.getElementById('cadastro').style.display = 'none'
+                    document.getElementById('editar').style.display = 'block'
+                    document.getElementById('deletar').style.display = 'none'
+                    document.getElementById('listar').style.display = 'none'
+                    
+                    
+                }
 
-function confirmar(){
+                function confirmar(){
 
-    let editEmail = document.getElementById('editEmail').value;
-     let senhaAtual = document.getElementById('editsenhaAtual').value;
-    let editSenha = document.getElementById('editSenha').value;
-    let confSenha = document.getElementById('editconfSenha').value;
-    let editUsuario = { editEmail,editSenha,senhaAtual, confSenha} 
+                    nomeEdit = document.getElementById('editEmail').value
+                    novoNome = document.getElementById('EditEmail').value
 
-editUsuario
-        if(existesenha(Senha)){
-            bancodeDados.splice(senhaAtual)
-                
-    }else{
-            bancodeDados.push(confSenha)
-            alert("senha trocada")
-        }
+                    novouser = document.getElementById('editUser').value
+                    confuser = document.getElementById('EditUser').value
 
-}
-function existesenha(Senha){
-    for(let usuario of bancodeDados){
-        if(Senha==senha.cadEmail){
-            return true;
-        }
-    }
-return false;
+                    novaSenha =document.getElementById('editconfSenha').value
+                    confSenha = document.getElementById('EditconfSenha').value
+                    
+                    let posVetor = bancodeDados.indexOf(user => user.email === nomeEdit); 
 
-   
-   
-}
 
+                    if (posVetor !== -1) {
+
+
+                        bancodeDados[posVetor].email = novoNome;
+                        bancodeDados[posVetor].usuario = confuser;
+                        bancodeDados[posVetor].senha = confSenha;
+                        
+                        alert("Dados atualizados com sucesso!"); } 
+
+                    else { alert("Email não encontrado.")
+                    } 
+
+
+                    // posVetor = bancodeDados.indexOf(nomeEdit,novouser,novaSenha)
+                    // bancodeDados[posVetor] = novoNome,confuser,confSenha
+
+                    //     alert(bancodeDados)
+                        }
+        
 
                     function deletar(){
                        
@@ -84,19 +88,10 @@ return false;
 
     function delet(){
 
-        let deletEmail = document.getElementById('deletEmail').value;
-        let deletSenha = document.getElementById('DeletSenha').value;
-        let confSenha = document.getElementById('DeletConfSenha').value;
-
-            let deletUsuario = {deletEmail,deletSenha,confSenha} 
-
-            if(deletUsuario==cadastrar){
-            deletDados.splice(deletUsuario ,1)
-             alert('conta excluida')
-         }else{alert('conta nao encontrada')}
-
-
-     }       
+        nomeDel = prompt('qual nome del')
+        posVetor = bancodeDados.indexOf(nomeDel)
+        bancodeDados.splice(posVetor,1)
+     }
 
                 function listar(){
 
@@ -105,6 +100,9 @@ return false;
                 document.getElementById('deletar').style.display = 'none'
                 document.getElementById('listar').style.display = 'block'
                 }
+
+
+
                 function exibir(){
                         let tabelinha = "Usuários cadastrados";
                         for(let usuario of bancodeDados){

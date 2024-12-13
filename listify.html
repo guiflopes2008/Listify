@@ -16,17 +16,15 @@
 
     <div id="nav-bar">
       <img id="listify" src="unnamed.png" alt="logo">
-      <!-- <label onclick="equipe()">equipe</label> -->
-      <label class="buttons" onclick="cadastro()">CADASATRAR</label>
+
+      <label class="buttons" onclick="cadastro()">CADASTRAR</label>
       <label class="buttons" onclick="editar()">EDITAR</label>
       <label class="buttons" onclick="deletar()">DELETAR</label>
       <label class="buttons" onclick="listar()">LISTAR</label>
     </div>
 
-    <!-- <div id="equipe">
-    
           
-</div> -->
+
 
 
 
@@ -46,11 +44,15 @@
 
     <div id="editar" style="display: none;">
       <div class="edit">
+        <input type="text" id="editEmail" placeholder="email"><br>
+        <input type="text" id="EditEmail" placeholder="email"><br>
 
-        <input type="email" id="editEmail" placeholder="Email"><br><br>
-        <input type="password" id="editsenhaAtual" placeholder="Senha atual"><br><br>
-        <input type="password" id="editSenha" placeholder="Nova senha"><br><br>
-        <input type="password" id="editconfSenha" placeholder="Confirmar nova senha"><br><br><br>
+        <input type="text" id="editUser" placeholder="novo nome"><br>
+        <input type="text" id="EditUser" placeholder="novo nome"><br>
+
+        <input type="text" id="editconfSenha" placeholder="nova senha"><br>
+        <input type="text" id="EditconfSenha" placeholder="nova senha"><br>
+
         <button id="Confirmar" onclick="confirmar()">Editar</button>
 
       </div>
