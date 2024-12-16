@@ -44,15 +44,10 @@
 
     <div id="editar" style="display: none;">
       <div class="edit">
-        <input type="text" id="editEmail" placeholder="email"><br>
-        <input type="text" id="EditEmail" placeholder="email"><br>
 
-        <input type="text" id="editUser" placeholder="novo nome"><br>
-        <input type="text" id="EditUser" placeholder="novo nome"><br>
 
-        <input type="text" id="editconfSenha" placeholder="nova senha"><br>
-        <input type="text" id="EditconfSenha" placeholder="nova senha"><br>
-
+        <input type="text" id="user" placeholder="Nome de usuário atual "><br><br><br>
+        <input type="text" id="novo" placeholder="Novo nome de usuario"><br><br><br><br>
         <button id="Confirmar" onclick="confirmar()">Editar</button>
 
       </div>
@@ -61,6 +56,8 @@
     <div id="deletar" style="display: none;">
       <div class="del">
 
+
+        
         <input type="email" id="deletEmail" placeholder="Email"><br><br><br>
         <input type="password" id="DeletSenha" placeholder="Senha "><br><br><br>
         <input type="password" id="DeletConfSenha" placeholder="Confirmar Senha "><br><br><br><br>
@@ -69,7 +66,11 @@
       </div>
     </div>
     <div id="listar" style="display: none;">
-      <button onclick="exibir()">xxxxxxxx</button>
+      <div class="lis">
+
+        <label id="li">USUÁRIOS CADASTRADOS NO SISTEMA</label><br><br><br><br>
+
+      <button id="lista" onclick="exibir()"> cadastros</button>
     </div>
   </div>
 

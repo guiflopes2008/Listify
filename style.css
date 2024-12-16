@@ -71,7 +71,7 @@ body{
     height: 80%;
     background-color: #b8b6b6;
     display: block;
-
+     
 }
 
 label{
@@ -272,3 +272,31 @@ input{
 
 }
 
+.lis{
+
+    background-color: rgb(221, 212, 212) ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 80px ;
+    height: 30%;
+    width: 30%;
+    margin: 60px;
+
+}
+
+#lista{
+
+    border-radius: 20px;
+    background-color: #f4f07d;
+    width: 95%;
+    height: 75px;
+    font-size: xx-large;
+    
+
+}
+
+#li{
+
+    color: black;
+
+}
