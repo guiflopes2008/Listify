@@ -14,9 +14,7 @@ function cadastrar(){
     let cadUser = document.getElementById('cadUsername').value;
     let cadSenha = document.getElementById('cadPassword').value;
     let cadUsuario = { cadEmail, cadUser, cadSenha }
-    // let bancodeDados = JSON.parse(localStorage.getItem("bancodeDados")) || []
-    // bancodeDados.push(cadUsuario)
-    // localStorage.setItem("bancodeDados", JSON.stringify)
+
 
     if(existe(cadEmail)){
         alert("Conta já existente");        
@@ -49,52 +47,28 @@ return false;
                 
                     function confirmar(){
 
-
-                        let user = document.getElementById('cadUsername').value;  // Nome de usuário atual
-                        let novouser = document.getElementById('novo').value;  // Novo nome de usuário
-                    
-                        // Procurando o índice do usuário pelo nome de usuário atual
-                        let posVetor = bancodeDados.findIndex(usuario => usuario.cadUser === user);
-                    
+                        let user = document.getElementById('cadUsername').value; 
+                        let novouser = document.getElementById('novo').value;  
+                        
+                        
+                        let posVetor = -1;
+                        
+                      
+                        for (let i = 0; i < bancodeDados.length; i++) {
+                            if (bancodeDados[i].cadUser == user) {
+                                posVetor = i;  
+                            }
+                        }
+                        
                         if (posVetor !== -1) {
-                            // Se o usuário for encontrado, alteramos o nome de usuário
+                           
                             bancodeDados[posVetor].cadUser = novouser;
                             alert('Conta editada com sucesso');
                         } else {
                             alert('Usuário não encontrado');
                         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        // let user = document.getElementById('cadUsername').value 
-                        // let novouser=document.getElementById('novo').value
-
-                        //     let cof={user, novouser}
-                        //     posVetor=bancodeDados.indexOf(cof)
-
-                        //     // bancodeDados.push(cof)
-
-                        //      bancodeDados[posVetor] = novouser
-                        // alert('conta editada')
                     }
-                    
 
-           
-
-                    
                       
                        
                     function deletar(){
