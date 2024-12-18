@@ -80,13 +80,25 @@ return false;
 
                     }
 
-    function delet(){
-
-        let deletEmail = document.getElementById('deletEmail').value;
-        posVetor = bancodeDados.indexOf(deletEmail).value;
-        bancodeDados.splice(posVetor,1)
-        alert("usuario excluido com sucesso")
-     }
+                    function delet(){
+                        let deletEmail = document.getElementById('deletEmail').value;
+                       
+                        let posVetor = -1;
+                        for (let i = 0; i < bancodeDados.length; i++) {
+                            if (bancodeDados[i].cadEmail === deletEmail) {
+                                posVetor = i;
+                                break;  
+                            }
+                        }
+                        
+                       
+                        if (posVetor !== -1) {
+                            bancodeDados.splice(posVetor, 1);  
+                            alert("Usuário excluído com sucesso!");
+                        } else {
+                            alert("Usuário não encontrado.");
+                        }
+                    }
 
                 function listar(){
 
@@ -94,15 +106,17 @@ return false;
                 document.getElementById('editar').style.display = 'none'
                 document.getElementById('deletar').style.display = 'none'
                 document.getElementById('listar').style.display = 'block'
+
+                exibir()
                 }
 
 
 
                 function exibir(){
-                        let tabelinha = "Usuários cadastrados";
+                        let tabelinha = "";
                         for(let usuario of bancodeDados){
-                        tabelinha += "\n"+usuario.cadUser
+                        tabelinha += "<br>"+usuario.cadUser
                         }
-                        alert(tabelinha);
+                      document.getElementById('dados').innerHTML = tabelinha
                     }
  

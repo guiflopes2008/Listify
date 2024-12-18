@@ -17,10 +17,14 @@
     <div id="nav-bar">
       <img id="listify" src="unnamed.png" alt="logo">
 
+     
+
       <label class="buttons" onclick="cadastro()">CADASTRAR</label>
       <label class="buttons" onclick="editar()">EDITAR</label>
       <label class="buttons" onclick="deletar()">DELETAR</label>
       <label class="buttons" onclick="listar()">LISTAR</label>
+
+ 
     </div>
 
           
@@ -30,15 +34,16 @@
 
     <div id="cadastro" style="display: block;">
       <div class="cad">
-
+       
         <input type="email" id="cadEmail" placeholder="Email"><br><br>
         <br>
         <input type="text" id="cadUsername" placeholder="Nome de usuário"><br><br>
         <br>
         <input type="password" id="cadPassword" placeholder="Senha de Usuário"><br><br><br>
         <br>
-        <button id="cadastros" onclick="cadastrar()">Cadastrar agora</button>
-
+        
+        <button id="cadastros" onclick="cadastrar()">CADASTRAR</button>
+      
       </div>
     </div>
 
@@ -48,7 +53,7 @@
 
         <input type="text" id="user" placeholder="Nome de usuário atual "><br><br><br>
         <input type="text" id="novo" placeholder="Novo nome de usuario"><br><br><br><br>
-        <button id="Confirmar" onclick="confirmar()">Editar</button>
+        <button id="Confirmar" onclick="confirmar()">EDITAR</button>
 
       </div>
     </div>
@@ -61,7 +66,7 @@
         <input type="email" id="deletEmail" placeholder="Email"><br><br><br>
         <input type="password" id="DeletSenha" placeholder="Senha "><br><br><br>
         <input type="password" id="DeletConfSenha" placeholder="Confirmar Senha "><br><br><br><br>
-        <button id="deleta" onclick="delet()">Deletar Conta</button>
+        <button id="deleta" onclick="delet()">DELETAR</button>
 
       </div>
     </div>
@@ -70,7 +75,10 @@
 
         <label id="li">USUÁRIOS CADASTRADOS NO SISTEMA</label><br><br><br><br>
 
-      <button id="lista" onclick="exibir()"> cadastros</button>
+      <div id="dados">
+
+
+      </div>
     </div>
   </div>
 
